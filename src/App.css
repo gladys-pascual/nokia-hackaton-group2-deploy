@@ -1,36 +1,38 @@
 /* general stuff */
 @font-face{
-  font-family: NokiaPureTWeb; 
-  src: local('NokiaPureTWeb'), url('./Fonts/NokiaPureTWeb_Rg.ttf'); 
+  font-family: 'NokiaPureTWeb'; 
+  src: local('NokiaPureTWeb'), url('./Fonts/NokiaPureTWeb_Rg.ttf') format('ttf'); 
+  weight: normal; 
 }
 
 @font-face{
-  font-family: NokiaPureTWeb; 
-  src: local('NokiaPureTWeb'), url('./Fonts/NokiaPureTWeb_Bd.ttf'); 
+  font-family: 'NokiaPureTWeb'; 
+  src: local('NokiaPureTWeb'), url('./Fonts/NokiaPureTWeb_Bd.ttf') format('ttf'); 
   weight: bold; 
 }
 
 
 @font-face{
-  font-family: NokiaPureTWeb; 
-  src: local('NokiaPureTWeb'), url('./Fonts/NokiaPureTWeb_Lt.ttf'); 
+  font-family: 'NokiaPureTWeb'; 
+  src: local('NokiaPureTWeb'), url('./Fonts/NokiaPureTWeb_Lt.ttf') format('ttf'); 
   weight: lighter; 
 }
 
 @font-face{
-  font-family: NokiaPureHeadline; 
-  src: local('NokiaPureHeadline'), url('./Fonts/NokiaPureHeadline_Rg.ttf'); 
+  font-family: 'NokiaPureHeadline'; 
+  src: local('NokiaPureHeadline'), url('./Fonts/NokiaPureHeadline_Rg.ttf') format('ttf'); 
+  weight: normal; 
 }
 
 @font-face{
-  font-family: NokiaPureHeadline; 
-  src: local('NokiaPureHeadline'), url('./Fonts/NokiaPureHeadline_Bd.ttf'); 
+  font-family: 'NokiaPureHeadline'; 
+  src: local('NokiaPureHeadline'), url('./Fonts/NokiaPureHeadline_Bd.ttf') format('ttf'); 
   weight: bold; 
 }
 
 @font-face{
-  font-family: NokiaPureHeadline; 
-  src: local('NokiaPureHeadline'), url('./Fonts/NokiaPureHeadline_Lt.ttf'); 
+  font-family: 'NokiaPureHeadline'; 
+  src: local('NokiaPureHeadline'), url('./Fonts/NokiaPureHeadline_Lt.ttf') format('ttf'); 
   weight: lighter; 
 }
 
@@ -38,11 +40,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'NokiaPureHeadline', 'NokiaPureTWeb'
 }
 
-.body{
-  font-family: NokiaPureTWeb;
-}
 /* gladys */
 
 /* matias */
