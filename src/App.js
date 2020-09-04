@@ -10,7 +10,7 @@ import './Fonts/NokiaPureHeadline_Bd.ttf';
 import "./App.css";
 
 const App = () => {
-  const [phoneDetails, setPhoneDetails] = useState([]);
+  const [phoneDetails, setPhoneDetails] = useState(null);
 
   useEffect(() => {
     fetch(
@@ -24,11 +24,11 @@ const App = () => {
   return (
     <>
       <Switch>
-        <Route
+        { phoneDetails && <Route
           exact
           path="/"
           render={() => <Home phoneDetails={phoneDetails} />}
-        />
+        />}
       </Switch>
     </>
   );
