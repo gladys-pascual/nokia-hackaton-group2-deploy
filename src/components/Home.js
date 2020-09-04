@@ -4,13 +4,13 @@ import WhichPhone from "./WhichPhone";
 import PhoneList from "./PhoneList";
 import Navbar from "./Navbar";
 
-const Home = () => {
+const Home = (phoneDetails) => {
   return (
     <>
       <Navbar />
       <Banner />
       <WhichPhone />
-      <PhoneList />
+      <PhoneList phoneDetails={phoneDetails} />
     </>
   );
 };
