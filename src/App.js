@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import { Switch, Route } from "react-router-dom";
 import Home from "./components/Home";
+import Phone from "./components/Phone";
 
 const App = () => {
   const [phoneDetails, setPhoneDetails] = useState([]);
@@ -22,6 +23,10 @@ const App = () => {
           exact
           path="/"
           render={() => <Home phoneDetails={phoneDetails} />}
+        />
+        <Route
+          path="/phone/:model"
+          render={() => <Phone phoneDetails={phoneDetails} />}
         />
       </Switch>
     </>

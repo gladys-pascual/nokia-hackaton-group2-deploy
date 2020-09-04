@@ -1,7 +1,7 @@
 import React from "react";
 
 const PhoneList = (props) => {
-  console.log(props);
+  // console.log(props);
   return (
     <div className="phone-list-wrapper">
       <h1>Phone List</h1>

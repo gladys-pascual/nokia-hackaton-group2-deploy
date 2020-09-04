@@ -1,5 +1,5 @@
 /* general stuff */
-@font-face{
+/* @font-face{
   font-family: NokiaPureTWeb; 
   src: local('NokiaPureTWeb'), url('./Fonts/NokiaPureTWeb_Rg.ttf'); 
 }
@@ -32,7 +32,7 @@
   font-family: NokiaPureHeadline; 
   src: local('NokiaPureHeadline'), url('./Fonts/NokiaPureHeadline_Lt.ttf'); 
   weight: lighter; 
-}
+} */
 
 * {
   margin: 0;
@@ -40,7 +40,7 @@
   box-sizing: border-box;
 }
 
-.body{
+.body {
   font-family: NokiaPureTWeb;
 }
 /* gladys */
@@ -61,16 +61,12 @@
   color: blue;
 }
 
-
 .which-phone-banner {
   height: 300px;
   background-color: lightslategray;
 }
 
-
-
 /* anne */
-
 
 /* test */
 
