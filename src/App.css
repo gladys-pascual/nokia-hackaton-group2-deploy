@@ -51,18 +51,40 @@
 
 /* matias */
 
-.banner-wrapper {
-  height: 300px;
-  background-color: lightseagreen;
-}
-
 .navbar-wrapper {
   height: 50px;
   background-color: pink;
 }
 
 .navbar {
-  color: blue;
+  display: flex;
+}
+
+.logo-wrapper {
+  display: flex;
+  margin-left: 50%;
+}
+
+.logoNokia {
+  width: 130px;
+  margin-top: 3px;
+}
+
+.logoSeparator {
+  background: black;
+  width: 1px;
+  height: 18px;
+  margin: 22px 0px 0px -8px;
+}
+
+.logoPhonesAnchor {
+  font-family: NokiaPureHeadline, monospace;
+  font-weight: bold;
+}
+
+.banner-wrapper {
+  height: 300px;
+  background-color: lightseagreen;
 }
 
 .which-phone-banner {
