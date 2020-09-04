@@ -2,38 +2,38 @@
 @font-face{
   font-family: 'NokiaPureTWeb'; 
   src: local('NokiaPureTWeb'), url('./Fonts/NokiaPureTWeb_Rg.ttf') format('truetype'); 
-  weight: normal; 
+  font-weight: normal; 
 }
 
 @font-face{
   font-family: 'NokiaPureTWeb'; 
   src: local('NokiaPureTWeb'), url('./Fonts/NokiaPureTWeb_Bd.ttf') format('truetype'); 
-  weight: bold; 
+  font-weight: bold; 
 }
 
 
 @font-face{
   font-family: 'NokiaPureTWeb'; 
   src: local('NokiaPureTWeb'), url('./Fonts/NokiaPureTWeb_Lt.ttf') format('truetype'); 
-  weight: lighter; 
+  font-weight: lighter; 
 }
 
 @font-face{
   font-family: 'NokiaPureHeadline'; 
   src: local('NokiaPureHeadline'), url('./Fonts/NokiaPureHeadline_Rg.ttf') format('truetype'); 
-  weight: normal; 
+  font-weight: normal; 
 }
 
 @font-face{
   font-family: 'NokiaPureHeadline'; 
   src: local('NokiaPureHeadline'), url('./Fonts/NokiaPureHeadline_Bd.ttf') format('truetype'); 
-  weight: bold; 
+  font-weight: bold;
 }
 
 @font-face{
   font-family: 'NokiaPureHeadline'; 
   src: local('NokiaPureHeadline'), url('./Fonts/NokiaPureHeadline_Lt.ttf') format('truetype'); 
-  weight: lighter; 
+  font-weight: lighter; 
 }
 
 * {
@@ -47,18 +47,42 @@
 
 /* matias */
 
-.banner-wrapper {
-  height: 300px;
-  background-color: lightseagreen;
-}
-
 .navbar-wrapper {
   height: 50px;
   background-color: pink;
 }
 
 .navbar {
-  color: blue;
+  display: flex;
+  
+}
+
+.logo-wrapper {
+  display: flex;
+  margin-left: 50%;
+}
+
+.logoNokia {
+  width: 130px;
+  margin-top: 3px;
+}
+
+.logoSeparator {
+  background: black;
+  width: 1px;
+  height: 18px;
+  margin: 22px 0px 0px -8px;
+}
+
+.logoPhonesAnchor {
+  font-family: NokiaPureHeadline, monospace; 
+  font-weight: bold;
+}
+
+
+.banner-wrapper {
+  height: 300px;
+  background-color: lightseagreen;
 }
 
 
