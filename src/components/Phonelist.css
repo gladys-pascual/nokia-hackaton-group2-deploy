@@ -1,38 +1,37 @@
-.phonelist{
-    display:flex; 
-    flex-wrap: wrap;
+.phonelist {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.phonecard{
-    margin: auto; 
-    height: 45vw; 
-    width: 45vw; 
-    position: relative; 
-    margin-top: 200px; 
-  }
-  
-  
-  .phonecard-square1{
-    position: relative; 
-    background-color: #E3E3E3; 
-    height: 45vw; 
-    width: 45vw;  
-    z-index: 10;
-    display: flex; 
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  
-  .phonecard-square1>img{
-      height: 35vh;   
-  }
-  
-  .phonecard-square-bottom{
-    background-color: #124191;
-    height: 45vw; 
-    width: 45vw; 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    z-index: 0;   
-  }
+.phonecard {
+  margin: auto;
+  height: 45vw;
+  width: 45vw;
+  position: relative;
+  margin-top: 200px;
+}
+
+.phonecard-square1 {
+  position: relative;
+  background-color: #e3e3e3;
+  height: 45vw;
+  width: 45vw;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.phonecard-square1 img {
+  height: 35vh;
+}
+
+.phonecard-square-bottom {
+  background-color: #124191;
+  height: 45vw;
+  width: 45vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
