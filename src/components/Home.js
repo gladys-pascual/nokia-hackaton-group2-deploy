@@ -3,6 +3,7 @@ import Banner from "./Banner";
 import WhichPhone from "./WhichPhone";
 import PhoneList from "./PhoneList";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const Home = (phoneDetails) => {
   return (
@@ -11,6 +12,7 @@ const Home = (phoneDetails) => {
       <Banner />
       <WhichPhone />
       <PhoneList phoneDetails={phoneDetails} />
+      <Footer /> 
     </>
   );
 };
