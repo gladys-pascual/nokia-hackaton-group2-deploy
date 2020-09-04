@@ -1,30 +1,29 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import "./Phonelist.css";
+import Phonecard from "./Phonecard";
 
-const PhoneList = (props) => {
+const PhoneList = ({ phoneDetails }) => {
+  const [arrayTwoPhones, setArrayTwoPhones] = useState([]);
+
+  useEffect(() => {
+    ArrayOfTwoPhones();
+  }, []);
+
+  // create Array of Two, to display 2 Phones in each Square
+  const ArrayOfTwoPhones = () => {
+    let content = [];
+    for (let i = 0; i < phoneDetails.length; i = i + 2) {
+      const item = [phoneDetails[i], phoneDetails[i + 1]];
+      content.push(item);
+    }
+    setArrayTwoPhones(content);
+  };
+
   return (
-    <div className="phone-list-wrapper">
-      <h1>Phone List</h1>
-      <div className="phone-list-test">
-        <div className="phone-list">
-          <h1 className="phone-list-title">Phone 1</h1>
-          <img src="https://i.imgur.com/6zSrhJS.jpg" alt="test" />
-        </div>
-        <div className="phone-list">
-          <h1 className="phone-list-title">Phone 2</h1>
-          <img src="https://i.imgur.com/6zSrhJS.jpg" alt="test" />
-        </div>
-        <div className="phone-list">
-          <h1 className="phone-list-title">Phone 3</h1>
-          <img src="https://i.imgur.com/6zSrhJS.jpg" alt="test" />
-        </div>
-        <Link to="/phone/11">
-          <div className="phone-list">
-            <h1 className="phone-list-title">Phone 4</h1>
-            <img src="https://i.imgur.com/6zSrhJS.jpg" alt="test" />
-          </div>
-        </Link>
-      </div>
+    <div className="phonelist">
+      {arrayTwoPhones.map((phones) => (
+        <Phonecard {...phones} />
+      ))}
     </div>
   );
 };

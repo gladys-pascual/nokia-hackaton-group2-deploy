@@ -11,7 +11,7 @@ const Home = (phoneDetails) => {
       <Navbar />
       <Banner />
       <WhichPhone />
-      <PhoneList phoneDetails={phoneDetails} />
+      <PhoneList phoneDetails={phoneDetails.phoneDetails} />
       <Footer /> 
     </>
   );
