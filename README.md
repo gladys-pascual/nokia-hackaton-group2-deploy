@@ -12,4 +12,4 @@
 
 - react
 - react-router-dom
-- emoticon
+- emotion
