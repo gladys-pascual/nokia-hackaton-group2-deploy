@@ -12,3 +12,4 @@
 
 - react
 - react-router-dom
+- emoticon
