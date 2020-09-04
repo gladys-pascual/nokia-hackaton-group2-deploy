@@ -59,11 +59,11 @@
 
 .logo-wrapper {
   display: flex;
-  margin-left: 50%;
+  margin-left: 40%;
 }
 
 .logoNokia {
-  width: 130px;
+  width: 160px;
   margin-top: 3px;
 }
 
@@ -71,12 +71,14 @@
   background: black;
   width: 1px;
   height: 18px;
-  margin: 22px 0px 0px -8px;
+  margin: 28px 0px 0px -8px;
 }
 
 .logoPhonesAnchor {
   font-family: NokiaPureHeadline, monospace; 
+  font-size: 18px;
   font-weight: bold;
+  margin: 26px 15px;
 }
 
 
