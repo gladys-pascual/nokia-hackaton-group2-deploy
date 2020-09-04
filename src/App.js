@@ -25,13 +25,15 @@ const App = () => {
   return (
     <>
       <Switch>
+        {phoneDetails && (
+          <Route
+            exact
+            path="/"
+            render={() => <Home phoneDetails={phoneDetails} />}
+          />
+        )}
         <Route
-          exact
-          path="/"
-          render={() => <Home phoneDetails={phoneDetails} />}
-        />
-        <Route
-          path="/phone/:model"
+          path="/phone/:id"
           render={() => <Phone phoneDetails={phoneDetails} />}
         />
       </Switch>
