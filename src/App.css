@@ -47,6 +47,10 @@
   font-family: NokiaPureHeadline, NokiaPureTWeb;
 }
 
+a:visited {
+  color: black;
+}
+
 /* gladys */
 @import "~react-image-gallery/styles/css/image-gallery.css";
 
@@ -63,34 +67,54 @@
 
 .logo-wrapper {
   display: flex;
-  margin-left: 50%;
+  margin-left: 40%;
 }
 
 .logoNokia {
-  width: 130px;
-  margin-top: 3px;
+  width: 155px;
+  height: 72px;
+  margin-top: 6px;
 }
 
 .logoSeparator {
   background: black;
   width: 1px;
-  height: 18px;
-  margin: 22px 0px 0px -8px;
+  height: 19px;
+  margin: 33px 0px 0px -8px;
 }
 
 .logoPhonesAnchor {
   font-family: NokiaPureHeadline, monospace;
+  font-size: 18px;
   font-weight: bold;
+  margin: 30px 15px;
 }
 
 .banner-wrapper {
-  height: 300px;
-  background-color: lightseagreen;
+  height: 600px;
+  background-color: black;
+}
+
+.banner-title {
+  color: white;
+  text-align: right;
 }
 
 .which-phone-banner {
-  height: 300px;
-  background-color: lightslategray;
+  height: 660px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.footer-wrapper-top {
+  height: 400px;
+  margin-top: 200px;
+  background-color: black;
+}
+
+.footer-wrapper-bottom {
+  height: 200px;
+  background-color: white;
 }
 
 /* anne */

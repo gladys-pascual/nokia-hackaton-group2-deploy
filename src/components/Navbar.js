@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <header className="header">
-      <Link exact to="/">
+      <Link exact to="/" style={{ textDecoration: 'none' }}>
         <div>
           <div className="navbar">
             <div className="logo-wrapper">

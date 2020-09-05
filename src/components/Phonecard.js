@@ -5,38 +5,52 @@ import { jsx, css, keyframes } from "@emotion/core";
 import { Link } from "react-router-dom";
 
 const Phonecard = (props) => {
-  // console.log("phonecard props", props[0].id);
+  console.log(props);
   const bounce = keyframes`
     from, to{
-      transform: translate(-20px, -20px);
-      // transform: scale(1); 
+      transform: translate(-10vw, -10vw);
     }
   
     25% {
-      transform: translate(20px, -20px);
+      transform: translate(10vw, -10vw);
     }
   
    50% {
-      transform: translate(20px,20px);
-      // transform: scale(1.1)
+      transform: translate(10vw,10vw);
     }
   
     75% {
-      transform: translate(-30px, 30px);
+      transform: translate(-10vw, 10vw);
     }
   `;
-
+  console.log(props);
   return (
     <div className="phonecard">
-      <div className="phonecard-square1">
-        <Link to={`/phone/${props[0].id}`}>
-          <img src={props[0].pictures[0]} />{" "}
-        </Link>
-        <Link to={`/phone/${props[1].id}`}>
-          <img src={props[1].pictures[0]} />
-        </Link>
+      <div className="phonecard-square">
+        <div>
+          <h1>{props[0].model}</h1>>
+          <div className="phonecard-img-container">
+            <Link to={`/phone/${props[0].id}`}>
+              <img src={props[0].pictures[0]} />
+            </Link>
+          </div>
+        </div>
+        <div>
+          <h1>{props[1].model}</h1>>
+          <div className="phonecard-img-container">
+            <Link to={`/phone/${props[1].id}`}>
+              <img src={props[1].pictures[0]} />
+            </Link>
+          </div>
+        </div>
       </div>
-
+      <div
+        css={css`
+          animation: ${bounce} 50s linear infinite;
+        `}
+        className="phonecard-square-bottom"
+      ></div>
+      ); }
       <div
         css={css`
           animation: ${bounce} 50s linear infinite;

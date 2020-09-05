@@ -12,7 +12,7 @@ const PhoneList = ({ phoneDetails }) => {
   // create Array of Two, to display 2 Phones in each Square
   const ArrayOfTwoPhones = () => {
     let content = [];
-    for (let i = 0; i < phoneDetails.length; i = i + 2) {
+    for (let i = 0; i < phoneDetails.length; i += 2) {
       const item = [phoneDetails[i], phoneDetails[i + 1]];
       content.push(item);
     }
