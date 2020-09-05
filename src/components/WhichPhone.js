@@ -1,6 +1,6 @@
 import React from "react";
 
-const WhichPhone = ({ handleClick }) => {
+const WhichPhone = ({ travelerState, handleClick }) => {
   return (
     <section className="which-phone-banner">
       <div className="which-phone-banner-top">
@@ -23,7 +23,7 @@ const WhichPhone = ({ handleClick }) => {
                 <h1 className="which-phone-buttons-text">Water Resistant</h1>
               </div>
               <div className="which-phone-buttons">
-                <h1 onClick={handleClick} className="which-phone-buttons-text">For the traveler</h1>
+                <h1 onClick={handleClick} style={travelerState ? {backgroundColor:"rgb(183, 183, 183, 0.7)"}: null} className="which-phone-buttons-text">For the traveler</h1>
               </div>
             </div>
             <div>
