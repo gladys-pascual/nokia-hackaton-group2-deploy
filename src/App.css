@@ -227,6 +227,10 @@ a:visited {
   color: rgb(53, 53, 53);
 }
 
+.which-phone-banner-right-column-background-picture{
+  background-image: url('/images/nokia-tough-filter-banner.png');
+}
+
 .footer-wrapper-top {
   height: 400px;
   margin-top: 200px;
