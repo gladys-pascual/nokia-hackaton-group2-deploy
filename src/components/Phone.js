@@ -5,19 +5,18 @@ import PhonePictures from "./PhonePictures";
 
 const Phone = ({ phoneDetails }) => {
   const { id } = useParams();
-
   const clickedPhoneDetails = phoneDetails.find(
     (phone) => phone.id.toString() === id
   );
-
-  console.log(phoneDetails);
-  console.log(clickedPhoneDetails);
 
   return (
     <>
       <Navbar />
       <section>
-        <PhonePictures clickedPhoneDetails={clickedPhoneDetails} />
+        <PhonePictures
+          clickedPhonePictures={clickedPhoneDetails.pictures}
+          clickedPhoneName={clickedPhoneDetails.model}
+        />
         <p>info</p>
       </section>
     </>

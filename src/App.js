@@ -32,10 +32,12 @@ const App = () => {
             render={() => <Home phoneDetails={phoneDetails} />}
           />
         )}
-        <Route
-          path="/phone/:id"
-          render={() => <Phone phoneDetails={phoneDetails} />}
-        />
+        {phoneDetails && (
+          <Route
+            path="/phone/:id"
+            render={() => <Phone phoneDetails={phoneDetails} />}
+          />
+        )}
       </Switch>
     </>
   );

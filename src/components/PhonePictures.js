@@ -1,12 +1,14 @@
 import React from "react";
+import ImageGallery from "react-image-gallery";
 
-const PhonePictures = () => {
-  return (
-    <>
-      <p>img 1</p>
-      <p> img 2</p>
-    </>
-  );
+const PhonePictures = ({ clickedPhonePictures, clickedPhoneName }) => {
+  const images = [
+    {
+      original: `clickedPhonePictures`,
+      thumbnail: `clickedPhonePictures`,
+    },
+  ];
+  return <ImageGallery items={images} />;
 };
 
 export default PhonePictures;

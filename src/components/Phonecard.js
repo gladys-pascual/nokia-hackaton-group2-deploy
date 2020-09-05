@@ -5,7 +5,7 @@ import { jsx, css, keyframes } from "@emotion/core";
 import { Link } from "react-router-dom";
 
 const Phonecard = (props) => {
-  console.log("phonecard props", props[0].id);
+  // console.log("phonecard props", props[0].id);
   const bounce = keyframes`
     from, to{
       transform: translate(-20px, -20px);
