@@ -95,20 +95,32 @@ a:visited {
 .phone-info {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  
 }
 
 .phone-info-wrapper {
+  display: flex;
+  justify-content: space-between;
   padding: 10px 0px;
+  width: 80%;
 }
 
 .detail-wrapper {
   display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .detail-heading {
-  width: 12vw;
+  width: 200px;
   font-weight: bold;
   color: grey;
+}
+
+.detail-info {
+  width: 100%;
+  text-align: right;
 }
 
 /* phone info style end */
