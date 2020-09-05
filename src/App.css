@@ -106,6 +106,7 @@ a:visited {
 }
 
 .detail-heading {
+  width: 12vw;
   font-weight: bold;
   color: grey;
 }
