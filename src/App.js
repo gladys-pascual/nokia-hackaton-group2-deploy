@@ -9,6 +9,7 @@ import "./Fonts/NokiaPureHeadline_Lt.ttf";
 import "./Fonts/NokiaPureHeadline_Rg.ttf";
 import "./Fonts/NokiaPureHeadline_Bd.ttf";
 import "./App.css";
+import data from "./data";
 
 const App = () => {
   const [phoneDetails, setPhoneDetails] = useState(null);
@@ -21,6 +22,10 @@ const App = () => {
       .then((res) => setPhoneDetails(res))
       .catch((err) => console.log("Error fetching and parsing data", err));
   }, []);
+
+  // useEffect(() => {
+  //   setPhoneDetails(data);
+  // }, []);
 
   return (
     <>
