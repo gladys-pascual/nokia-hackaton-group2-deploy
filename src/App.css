@@ -101,12 +101,30 @@ a:visited {
 .banner-wrapper {
   height: 600px;
   background-color: black;
+  z-index: -10;
 }
 
 .banner-title {
   color: white;
+  margin-top: -220px;
+  margin-right: 50px;
+  font-size: 35px;
   text-align: right;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.38);
+  
 }
+
+.banner-wrapper-background-img-container {
+  overflow: hidden;
+  height: 100%;
+
+
+}
+
+.banner-wrapper-background-img {
+  float: right;
+}
+
 
 .which-phone-banner {
   display: flex;
@@ -222,6 +240,7 @@ a:visited {
 .which-phone-banner-bottom-arrow-down:hover {
   cursor: pointer;
   width: 390px;
+  margin-top: -1px;
   -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
     filter: url(#drop-shadow);
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
