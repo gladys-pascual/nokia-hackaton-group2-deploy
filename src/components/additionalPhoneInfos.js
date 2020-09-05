@@ -12,7 +12,7 @@ const data = {
             "model": "Nokia 210",
             'info': 'Camera & Facebook', 
             'icon': ['clean-battery.svg', 'icon-consumer-person-plus.svg'],
-            'traveler': false, 
+            'traveler': true, 
         },
         {
             "model": "Nokia 5310",

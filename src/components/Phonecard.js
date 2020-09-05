@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 import data from './additionalPhoneInfos.js'; 
 
 const Phonecard = (props) => {
-
+console.log(props);
 
   const PhoneDetails0 = data.additionalPhoneInfos.find(
     (phone) => phone.model === props[0].model
   );
-  const PhoneDetails1 = data.additionalPhoneInfos.find(
+  const PhoneDetails1 = props[1] && data.additionalPhoneInfos.find(
     (phone) => phone.model === props[1].model
   );
 
