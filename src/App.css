@@ -219,6 +219,12 @@ a:visited {
   float: right;
 }
 
+@media screen and (min-width: 1000px) {
+  .banner-wrapper-background-img {
+    width: 100%;
+  }
+}
+
 .which-phone-banner {
   display: flex;
   flex-direction: column;
