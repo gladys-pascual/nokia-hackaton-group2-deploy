@@ -109,26 +109,76 @@ a:visited {
 }
 
 .which-phone-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 660px;
-  background-color: white;
-  border: 1px solid black;
+  background-color: #F4F4F4;
+  z-index: 10;
+}
+
+.which-phone-banner-left-column {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+
+.which-phone-slogan-container {
+  width: 550px;
+  height: 200px;
+  margin-top: 60px;
+  margin-left: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.which-phone-slogan-text {
+  font-size: 60px;
 }
 
 .which-phone-row {
   display: flex;
-  height: 60px;
-  width: 410px;
+  height: 100px;
+  width: 540px;
+  margin-left: 40px;
   align-items: center;
   justify-content: space-evenly;
 }
 
 .which-phone-buttons {
   border: 1px solid black;
-  width: 160px;
-  height: 50px;
+  border-radius: 4px;
+  width: 230px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.2s;
+}
+
+.which-phone-buttons:hover {
+  background-color: gray;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.which-phone-buttons-text{
+ font-size: bold;
+ font-size: 18px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 100%;
+ height: 100%;
+ transition: 0.2s;
+}
+
+.which-phone-buttons-text:hover {
+  color: white;
 }
 
 .footer-wrapper-top {
