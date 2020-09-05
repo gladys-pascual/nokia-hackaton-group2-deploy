@@ -3,48 +3,51 @@
   font-family: "NokiaPureTWeb";
   src: local("NokiaPureTWeb"),
     url("./Fonts/NokiaPureTWeb_Rg.ttf") format("truetype");
-  weight: normal;
+  font-weight: normal;
 }
 
 @font-face {
   font-family: "NokiaPureTWeb";
   src: local("NokiaPureTWeb"),
     url("./Fonts/NokiaPureTWeb_Bd.ttf") format("truetype");
-  weight: bold;
+  font-weight: bold;
 }
 
 @font-face {
   font-family: "NokiaPureTWeb";
   src: local("NokiaPureTWeb"),
     url("./Fonts/NokiaPureTWeb_Lt.ttf") format("truetype");
-  weight: lighter;
+  font-weight: lighter;
 }
 
 @font-face {
   font-family: "NokiaPureHeadline";
   src: local("NokiaPureHeadline"),
     url("./Fonts/NokiaPureHeadline_Rg.ttf") format("truetype");
-  weight: normal;
+  font-weight: normal;
 }
 
 @font-face {
   font-family: "NokiaPureHeadline";
   src: local("NokiaPureHeadline"),
     url("./Fonts/NokiaPureHeadline_Bd.ttf") format("truetype");
-  weight: bold;
+  font-weight: bold;
 }
 
 @font-face {
   font-family: "NokiaPureHeadline";
   src: local("NokiaPureHeadline"),
     url("./Fonts/NokiaPureHeadline_Lt.ttf") format("truetype");
-  weight: lighter;
+  font-weight: lighter;
 }
 */ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: NokiaPureHeadline, NokiaPureTWeb;
+  font-family: NokiaPureTWeb, Arial, Helvetica,sans-serif;
+  line-height: 1.4em;
+  color: #000;
+	font-size: 16px;
 }
 
 a:visited {
@@ -55,6 +58,11 @@ a:visited {
 @import "~react-image-gallery/styles/css/image-gallery.css";
 
 /* matias */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
 
 .navbar-wrapper {
   height: 50px;
@@ -136,27 +144,94 @@ a:visited {
 
 /* anne */
 
-/* test */
-
-.header {
+.phonelist {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80vw; 
+  margin: auto; 
+  font-family: NokiaPureTWeb, Arial, Helvetica, sans-serif; 
 }
 
-.phone-list-wrapper {
-  background: lightblue;
+.phonecard {
+  margin: auto;
+  height: 37vw;
+  width: 37vw;
+  position: relative;
+  margin-top: 5vh;
+  letter-spacing: -0.2px;
+  line-height: 20px
 }
 
-.phone-list-test {
+.phonecard-square {
+  position: relative;
+  background-color: #e3e3e3;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.phonecard:nth-of-type(1) .phonecard-square-bottom,
+.phonecard:nth-of-type(4) .phonecard-square-bottom,
+.phonecard:nth-of-type(5) .phonecard-square-bottom {
+  display: none;
+}
+.phonecard:nth-of-type(2) .phonecard-square,
+.phonecard:nth-of-type(6) .phonecard-square {
+  background-color: rgb(16, 0, 169);
+  color: rgb(255, 255, 255); 
+}
+.phonecard:nth-of-type(2) .phonecard-square-bottom,
+.phonecard:nth-of-type(6) .phonecard-square-bottom {
+  background-color: #e3e3e3;
+}
+
+.phonecard-square > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  width: 25%;
+  height: 90%;
+}
+
+.phonecard-img-container{
+  height: 80%; 
+}
+
+.phonecard-square div p{
+  margin: -10px auto; 
+}
+
+
+.phonecard-img-container > a {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-.phone-list {
-  width: 250px;
-  margin: 10px;
+.phonecard-img-container > a > img {
+  flex-shrink: 0;
+  min-width: 100%;
+  height: 100%;
 }
 
-.phone-list img {
-  width: 100%;
+.phonecard-square > div > h2{
+    text-align: center; 
+    font-size: calc(16px + 12*(100vw - 840px)/599);
+	  line-height: calc(20px + 8*(100vw - 840px)/599);
+    font-weight: bold;
+    white-space:nowrap;
+}
+
+.phonecard-square-bottom {
+  background-color: #124191;
+  height: 40vw;
+  width: 40vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }

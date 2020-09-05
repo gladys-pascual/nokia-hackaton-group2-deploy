@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "./Phonelist.css";
 import Phonecard from "./Phonecard";
 
 const PhoneList = ({ phoneDetails }) => {
