@@ -21,15 +21,13 @@ const PhoneList = ({ travelerState, phoneDetails }) => {
   };
 
 
-
-
   useEffect(() => {
     if (travelerState) {
-      ArrayOfTwoPhones()
+      ArrayOfTwoTravelerPhones()
     } else {
     ArrayOfTwoPhones();
     }
-  }, []);
+  }, [travelerState]);
 
   // create Array of Two, to display 2 Phones in each Square
   const ArrayOfTwoPhones = () => {
