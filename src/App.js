@@ -9,7 +9,8 @@ import "./Fonts/NokiaPureHeadline_Lt.ttf";
 import "./Fonts/NokiaPureHeadline_Rg.ttf";
 import "./Fonts/NokiaPureHeadline_Bd.ttf";
 import "./App.css";
-import dataApi from './components/api'; 
+import data from "./data";
+import dataApi from "./components/api";
 
 const App = () => {
   const [phoneDetails, setPhoneDetails] = useState(null);
@@ -23,9 +24,13 @@ const App = () => {
   //     .catch((err) => console.log("Error fetching and parsing data", err));
   // }, []);
 
-  useEffect(()=> {
-    setPhoneDetails(dataApi); 
-  })
+  useEffect(() => {
+    setPhoneDetails(dataApi);
+  });
+
+  // useEffect(() => {
+  //   setPhoneDetails(data);
+  // }, []);
 
   return (
     <>
