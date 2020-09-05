@@ -3,7 +3,8 @@ import React from "react";
 const WhichPhone = () => {
   return (
     <section className="which-phone-banner">
-      <div className="which-phone-banner-left-column">
+      <div className="which-phone-banner-top">
+         <div className="which-phone-banner-left-column">
         <div className="which-phone-slogan-container">
           <h1 className="which-phone-slogan-text">Find the perfect phone for you.</h1>
         </div>
@@ -37,10 +38,15 @@ const WhichPhone = () => {
           </div>
         </div>
       </div>
-      <div className="which-phone-banner-right-column"> 
-        <div>
-          <img src="/images/nokia-tough-filter-banner.png" alt="Nokia 800 Tough"/>
-        </div>
+         <div className="which-phone-banner-right-column"> 
+          <div>
+             <img className="which-phone-banner-right-column-img" src="/images/nokia-tough-filter-banner.png" alt="Nokia 800 Tough"/>
+          </div>
+
+      </div>
+      </div>
+      <div className="which-phone-banner-bottom">
+        <img className="which-phone-banner-bottom-arrow-down" src="/images/arrow-down-filter-banner.png" alt="Arrow Down" />
       </div>
     </section>
   );
