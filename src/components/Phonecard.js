@@ -2,9 +2,10 @@
 import React, { useEffect, useState } from "react";
 import { jsx, css, keyframes } from "@emotion/core";
 import { Link } from "react-router-dom";
+import './additonalPhoneInfos.js'; 
 
 const Phonecard = (props) => {
-  // console.log(props);
+  // console.log(phoneInfos);
   const bounce = keyframes`
     from, to{
       transform: translate(-10vw, -10vw);

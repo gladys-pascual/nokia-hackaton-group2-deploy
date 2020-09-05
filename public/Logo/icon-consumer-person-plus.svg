@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="63px" height="72px" viewBox="0 0 63 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-consumer-person-plus copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="ICONS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-consumer-person-plus-copy" transform="translate(0.000000, 1.000000)" stroke="#4D5766">
+            <path d="M55.3913043,48.3578182 L55.3913043,46.3998551 C55.3913043,39.7113043 43.1281159,34.2898551 28,34.2898551 C12.8718841,34.2898551 0.608695652,39.7113043 0.608695652,46.3998551 L0.608695652,69.7971014 L48.435094,69.7971014" id="avb" stroke-linejoin="round"></path>
+            <circle id="Oval" cx="27.2898551" cy="14.1014493" r="14.1014493"></circle>
+            <circle id="avc" cx="50.7246377" cy="58.8405797" r="11.1594203"></circle>
+            <path d="M50.7246377,52.7536232 L50.7246377,64.9275362" id="Line" stroke-linecap="square"></path>
+            <path d="M56.8115942,58.8405797 L44.6376812,58.8405797" id="Line" stroke-linecap="square" transform="translate(50.724638, 58.840580) scale(-1, -1) translate(-50.724638, -58.840580) "></path>
+        </g>
+    </g>
+</svg>
