@@ -38,8 +38,8 @@ const WhichPhone = () => {
         </div>
       </div>
       <div className="which-phone-banner-right-column"> 
-        <div>
-          <img src="/images/nokia-tough-filter-banner.png" alt="Nokia 800 Tough"/>
+        <div className="which-phone-banner-right-column-background-picture">
+          
         </div>
       </div>
     </section>
