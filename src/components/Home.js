@@ -18,7 +18,7 @@ const Home = (phoneDetails) => {
       <Banner />
       <WhichPhone travelerState={travelerState} handleClick={handleClick} />
       <PhoneList travelerState={travelerState} phoneDetails={phoneDetails.phoneDetails} />
-      <Footer /> 
+      {/* <Footer />  */}
     </>
   );
 };
