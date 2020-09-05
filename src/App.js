@@ -9,18 +9,23 @@ import "./Fonts/NokiaPureHeadline_Lt.ttf";
 import "./Fonts/NokiaPureHeadline_Rg.ttf";
 import "./Fonts/NokiaPureHeadline_Bd.ttf";
 import "./App.css";
+import dataApi from './components/api'; 
 
 const App = () => {
   const [phoneDetails, setPhoneDetails] = useState(null);
 
-  useEffect(() => {
-    fetch(
-      "https://cors-anywhere.herokuapp.com/https://nokia-hackathon.herokuapp.com/phones"
-    )
-      .then((response) => response.json())
-      .then((res) => setPhoneDetails(res))
-      .catch((err) => console.log("Error fetching and parsing data", err));
-  }, []);
+  // useEffect(() => {
+  //   fetch(
+  //     "https://cors-anywhere.herokuapp.com/https://nokia-hackathon.herokuapp.com/phones"
+  //   )
+  //     .then((response) => response.json())
+  //     .then((res) => setPhoneDetails(res))
+  //     .catch((err) => console.log("Error fetching and parsing data", err));
+  // }, []);
+
+  useEffect(()=> {
+    setPhoneDetails(dataApi); 
+  })
 
   return (
     <>
