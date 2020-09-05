@@ -34,13 +34,29 @@
     background-color: #E3E3E3;
   }
 
-  .phonecard-square>a>img{
-      height: 30vw;   
+  .phonecard-square>div{
+      display: flex; 
+      flex-direction: column; 
+      width: 25%; 
+      height: 90%; 
   }
 
-  .phonecard-square>a>img{
-    height: 30vw;   
-    }
+  .phonecard-img-container>a{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    overflow: hidden;
+    height: 700px
+  }
+  .phonecard-img-container>a>img{
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+  }
+  
+  .phonecard-square>div>div>a>img{
+      height: 30vw;   
+  }
   
   .phonecard-square-bottom{
     background-color: #124191;
