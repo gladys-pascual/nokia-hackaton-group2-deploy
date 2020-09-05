@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import React, { useEffect, useState } from "react";
-import "./Phonelist.css";
 import { jsx, css, keyframes } from "@emotion/core";
 import { Link } from "react-router-dom";
 
@@ -28,7 +27,8 @@ const Phonecard = (props) => {
     <div className="phonecard">
       <div className="phonecard-square">
         <div>
-          <h1>{props[0].model}</h1>>
+          <h2>{props[0].model}</h2>
+          <p>≈ 15h talk time </p>
           <div className="phonecard-img-container">
             <Link to={`/phone/${props[0].id}`}>
               <img src={props[0].pictures[0]} />
@@ -36,7 +36,7 @@ const Phonecard = (props) => {
           </div>
         </div>
         <div>
-          <h1>{props[1].model}</h1>>
+          <h2>{props[1].model}</h2>
           <div className="phonecard-img-container">
             <Link to={`/phone/${props[1].id}`}>
               <img src={props[1].pictures[0]} />
@@ -44,13 +44,6 @@ const Phonecard = (props) => {
           </div>
         </div>
       </div>
-      <div
-        css={css`
-          animation: ${bounce} 50s linear infinite;
-        `}
-        className="phonecard-square-bottom"
-      ></div>
-      ); }
       <div
         css={css`
           animation: ${bounce} 50s linear infinite;
