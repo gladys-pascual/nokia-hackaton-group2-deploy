@@ -357,6 +357,7 @@ a:visited {
   z-index: 10;
   display: flex;
   align-items: center;
+  border-radius: 2px;
   justify-content: space-evenly;
 }
 
@@ -378,7 +379,7 @@ a:visited {
 
 .phonecard:nth-of-type(2) .phonecard-square-bottom,
 .phonecard:nth-of-type(6) .phonecard-square-bottom {
-  background-color: #e3e3e3;
+  background-color: #f4f4f4;
 }
 
 .phonecard-container {

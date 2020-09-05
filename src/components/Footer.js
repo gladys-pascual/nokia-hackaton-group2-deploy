@@ -7,7 +7,7 @@ const Footer = () => {
       <h1 className="footer-title">Footer test</h1>
     </section>
     <section className="footer-wrapper-bottom">
-    <h1 className="footer-title">Footer test</h1>
+    
   </section>
   </>
   );
