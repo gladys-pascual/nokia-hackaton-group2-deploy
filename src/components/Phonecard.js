@@ -5,7 +5,7 @@ import { jsx, css, keyframes } from "@emotion/core";
 import { Link } from "react-router-dom";
 
 const Phonecard = (props) => {
-  console.log(props);
+  // console.log(props);
   const bounce = keyframes`
     from, to{
       transform: translate(-10vw, -10vw);
@@ -23,7 +23,7 @@ const Phonecard = (props) => {
       transform: translate(-10vw, 10vw);
     }
   `;
-  console.log(props);
+  // console.log(props);
   return (
     <div className="phonecard">
       <div className="phonecard-square">
