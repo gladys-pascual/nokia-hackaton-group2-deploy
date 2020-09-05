@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import { useParams } from "react-router-dom";
 import PhonePictures from "./PhonePictures";
+import PhoneInfo from "./PhoneInfo";
 
 const Phone = ({ phoneDetails }) => {
   const { id } = useParams();
@@ -12,12 +13,13 @@ const Phone = ({ phoneDetails }) => {
   return (
     <>
       <Navbar />
-      <section>
-        <PhonePictures
-          clickedPhonePictures={clickedPhoneDetails.pictures}
-          clickedPhoneName={clickedPhoneDetails.model}
-        />
-        <p>info</p>
+      <section className="phone-details">
+        <div className="phone-pictures">
+          <PhonePictures clickedPhonePictures={clickedPhoneDetails.pictures} />
+        </div>
+        <div className="phone-info">
+          <PhoneInfo clickedPhoneDetails={clickedPhoneDetails} />
+        </div>
       </section>
     </>
   );
