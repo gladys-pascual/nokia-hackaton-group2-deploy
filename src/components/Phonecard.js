@@ -1,10 +1,11 @@
 /** @jsx jsx */
 import React, { useEffect, useState } from 'react';
 import './Phonelist.css';
-import { jsx, css, keyframes } from '@emotion/core'
+import { jsx, css, keyframes } from '@emotion/core'; 
+import { Link } from 'react-router-dom';
 
 const Phonecard = (props) => {
-console.log(props);
+    console.log(props);
     const bounce = keyframes`
     from, to{
       transform: translate(-20px, -20px);
@@ -27,9 +28,13 @@ console.log(props);
 
     return (
         <div className="phonecard">
-            <div className="phonecard-square1">
-                <img src={props[0].pictures[0]} />
-                <img src={props[1].pictures[0]} />
+            <div className="phonecard-square">
+                <Link to={`/phone/${props[0].id}`}>
+                    <img src={props[0].pictures[0]} />
+                </Link>
+                <Link to={`/phone/${props[1].id}`}>
+                    <img src={props[1].pictures[0]} />
+                </Link>
             </div>
             <div css={css`
         animation: ${bounce} 50s linear infinite;
