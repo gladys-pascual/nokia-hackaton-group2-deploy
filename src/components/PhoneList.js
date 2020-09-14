@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from "react";
 import Phonecard from "./Phonecard";
-import data from './additionalPhoneInfos.js'; 
+import data from "./additionalPhoneInfos.js";
 
 const PhoneList = ({ travelerState, phoneDetails }) => {
   const [arrayTwoPhones, setArrayTwoPhones] = useState([]);
-  
-  
+
   //get the Phones which got traveler = true
-   const filteredTraveler = data.additionalPhoneInfos.filter((phone) => (phone.traveler))
+  const filteredTraveler = data.additionalPhoneInfos.filter(
+    (phone) => phone.traveler
+  );
   //get the Info from the API for the filteredTraveler models
-   const displayPhones = phoneDetails.filter((phone)=> (filteredTraveler.find((handy) => (handy.model === phone.model))))
+  const displayPhones = phoneDetails.filter((phone) =>
+    filteredTraveler.find((handy) => handy.model === phone.model)
+  );
   //create array of Two out of it
   const ArrayOfTwoTravelerPhones = () => {
     let content = [];
@@ -20,13 +23,13 @@ const PhoneList = ({ travelerState, phoneDetails }) => {
     setArrayTwoPhones(content);
   };
 
-
   useEffect(() => {
     if (travelerState) {
-      ArrayOfTwoTravelerPhones()
+      ArrayOfTwoTravelerPhones();
     } else {
-    ArrayOfTwoPhones();
+      ArrayOfTwoPhones();
     }
+    // eslint-disable-next-line
   }, [travelerState]);
 
   // create Array of Two, to display 2 Phones in each Square

@@ -1,18 +1,15 @@
 /** @jsx jsx */
-import React, { useEffect, useState } from "react";
 import { jsx, css, keyframes } from "@emotion/core";
 import { Link } from "react-router-dom";
-import data from './additionalPhoneInfos.js'; 
+import data from "./additionalPhoneInfos.js";
 
 const Phonecard = (props) => {
-console.log(props);
-
   const PhoneDetails0 = data.additionalPhoneInfos.find(
     (phone) => phone.model === props[0].model
   );
-  const PhoneDetails1 = props[1] && data.additionalPhoneInfos.find(
-    (phone) => phone.model === props[1].model
-  );
+  const PhoneDetails1 =
+    props[1] &&
+    data.additionalPhoneInfos.find((phone) => phone.model === props[1].model);
 
   const bounce = keyframes`
     from, to{
@@ -35,29 +32,49 @@ console.log(props);
   return (
     <div className="phonecard">
       <div className="phonecard-square">
-        <div className='phonecard-container'>
+        <div className="phonecard-container">
           <h2>{props[0].model}</h2>
-          <p className="phonecard-info">{PhoneDetails0 && PhoneDetails0.info} </p>
+          <p className="phonecard-info">
+            {PhoneDetails0 && PhoneDetails0.info}{" "}
+          </p>
           <div className="phonecard-icon-container">
-          {PhoneDetails0 && PhoneDetails0.icon.map(icon => <img className="phonecard-icon" src={process.env.PUBLIC_URL + `/Logo/${icon}`} alt="Icon" />
-          )} 
+            {PhoneDetails0 &&
+              PhoneDetails0.icon.map((icon) => (
+                <img
+                  className="phonecard-icon"
+                  src={process.env.PUBLIC_URL + `/Logo/${icon}`}
+                  alt="Icon"
+                />
+              ))}
           </div>
           <div className="phonecard-img-container">
             <Link to={`/phone/${props[0].id}`}>
-              <img className={props[0].name} src={props[0].pictures[0]} />
+              <img
+                className={props[0].name}
+                src={props[0].pictures[0]}
+                alt={props[0].name}
+              />
             </Link>
           </div>
         </div>
-        <div className='phonecard-container'>
+        <div className="phonecard-container">
           <h2>{props[1].model}</h2>
-          <p className="phonecard-info">{PhoneDetails1 && PhoneDetails1.info} </p>
+          <p className="phonecard-info">
+            {PhoneDetails1 && PhoneDetails1.info}{" "}
+          </p>
           <div className="phonecard-icon-container">
-          {PhoneDetails1 && PhoneDetails1.icon.map(icon => <img className="phonecard-icon" src={process.env.PUBLIC_URL + `/Logo/${icon}`} alt="Icon" />
-          )} 
+            {PhoneDetails1 &&
+              PhoneDetails1.icon.map((icon) => (
+                <img
+                  className="phonecard-icon"
+                  src={process.env.PUBLIC_URL + `/Logo/${icon}`}
+                  alt="Icon"
+                />
+              ))}
           </div>
           <div className="phonecard-img-container">
             <Link to={`/phone/${props[1].id}`}>
-              <img src={props[1].pictures[0]} />
+              <img src={props[1].pictures[0]} alt="nokia feature phone" />
             </Link>
           </div>
         </div>
