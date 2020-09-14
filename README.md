@@ -1,6 +1,4 @@
-- Hackathon to create a landing page for a client
-
-## App Features
+# Hackathon to create a landing page using React to display Nokia Feature Phones
 
 ## Technologies used:
 
@@ -11,5 +9,6 @@
 ## Libraries used:
 
 - react
-- react-router-dom
 - emotion
+- react-router-dom
+- react-image-gallery
